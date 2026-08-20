@@ -269,14 +269,4 @@ ai_invoice_generator
 
 ---
 
-# 👨‍💻 Author
 
-**Pushpak Ganganmale**
-
-GitHub  
-https://github.com/PushpakGanganmale
-
-LinkedIn  
-https://www.linkedin.com/in/pushpakganganmale/
-
----
