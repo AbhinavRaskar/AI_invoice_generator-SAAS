@@ -3,7 +3,8 @@ import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "@clerk/clerk-react";
 import { invoicePreviewStyles } from "../assets/dummyStyles";
 
-const API_BASE = "https://invoicegenius-backend.onrender.com";
+const API_BASE =
+  import.meta.env.VITE_API_BASE || "http://localhost:4000";
 const PROFILE_ENDPOINT = `${API_BASE}/api/business-profile/me`;
 const INVOICE_ENDPOINT = (id) => `${API_BASE}/api/invoices/${id}`;
 
@@ -291,7 +292,7 @@ export default function InvoicePreview() {
       const remainingAmount = data.remainingAmount; // ✅ correct remaining from backend
 
       const options = {
-        key: "rzp_live_SPnxCBbAompnt1",
+        key: import.meta.env.VITE_RAZORPAY_KEY_ID,
         amount: order.amount,
         currency: "INR",
         name: "Invoice Genius",

@@ -104,7 +104,7 @@ ${prompt}
 `;
 
     const completion = await groq.chat.completions.create({
-      model: "llama-3.3-70b-versatile", // ✅ FIXED: updated from deprecated llama-3.1-70b-versatile
+      model: "openai/gpt-oss-20b", // ✅ FIXED: updated from deprecated llama-3.1-70b-versatile
       messages: [
         {
           role: "system",

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useAuth } from "@clerk/clerk-react"; 
 
 // --- Constants ---
-const API_BASE = "https://invoicegenius-backend.onrender.com"; // Update this to your actual backend URL
+const API_BASE =
+  import.meta.env.VITE_API_BASE || "http://localhost:4000"; // Update this to your actual backend URL
 
 // --- Utility: Resolve Image URLs ---
 function resolveImageUrl(url) {
