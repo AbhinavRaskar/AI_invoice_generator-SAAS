@@ -19,8 +19,9 @@ const port = process.env.PORT || 4000;
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://invoicegenius-4ffi.onrender.com",
-];
+  "http://localhost:4000",
+  process.env.FRONTEND_URL,
+].filter(Boolean);
 
 const corsOptions = {
   origin: allowedOrigins,

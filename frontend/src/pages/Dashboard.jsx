@@ -6,7 +6,7 @@ import { EyeIcon, FileTextIcon } from "lucide-react";
 import StatusBadge from "../component/StatusBadge";
 import { useNavigate, useLocation } from "react-router-dom";
 
-const API_BASE = "https://invoicegenius-backend.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:4000";
 
 /* normalize client object */
 function normalizeClient(raw) {

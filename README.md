@@ -162,13 +162,13 @@ AI Layer (GROQ)
 Frontend
 
 ```
-https://invoicegenius-4ffi.onrender.com
+"http://localhost:4000"
 ```
 
 Backend
 
 ```
-https://invoicegenius-backend.onrender.com
+"http://localhost:4000"
 ```
 
 ---

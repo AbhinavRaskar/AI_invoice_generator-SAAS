@@ -7,7 +7,7 @@ import { invoicesStyles } from "../assets/dummyStyles";
 import { useAuth } from "@clerk/clerk-react";
 
 const API_BASE =
-  import.meta.env.VITE_API_BASE || "https://invoicegenius-backend.onrender.com";
+  import.meta.env.VITE_API_BASE || "http://localhost:4000";
 
 /* ---------- helpers ---------- */
 function resolveImageUrl(url) {
