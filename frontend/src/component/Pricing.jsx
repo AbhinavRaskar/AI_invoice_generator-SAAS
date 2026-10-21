@@ -295,7 +295,7 @@ const Pricing = () => {
         <div className="mt-16 border-t border-slate-200 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-slate-500">
 
           <p>
-            © 2026 InvoiceAI • Built by Pushpak
+            © 2026 InvoiceAI • Built by Abhinav
           </p>
 
           <div className="flex items-center gap-6 mt-3 md:mt-0">
